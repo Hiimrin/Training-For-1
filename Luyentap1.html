@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen Tap 1</title>
+</head>
+<body>
+<script>
+    /* Bai 1
+    for (i = 1; i <100;i++ ){
+
+    }if (i=99){
+        alert("i" + "=" + i);
+    }
+
+     */
+
+    /* bai 2
+    let a = parseInt(prompt("Nhap vao nhiet do :"));
+    if(a < 20 ){
+        alert('Tang nhiet do len');
+    }else if (a > 100){
+        alert("Giam nhiet do xuong");
+    }
+
+    /* bai 3
+    et a=0,b=1,result=b;
+    for (let i = 1;i<20;i++){
+            document.write(result+"<br>");
+                result = a+b;
+                a=b;
+                b=result;
+    }
+     */
+
+    /* Bai 4
+
+    let a=0,b=1;
+    for (let i = 1;i<20;i++){
+        result = a+b;
+        a=b;
+        b=result;
+        if (result %5===0){
+            document.write(result);
+            break;
+        }
+    }
+     */
+
+    // Bai 5
+
+    function sumFibona(num) {
+        let sum = 0;
+        let fibo = 20;
+        while (sum <= num) {
+            let currentFib = fibona(fibo);
+            if (currentFib %2 === 1) {
+                sum += currentFib;
+            }
+            fibo++;
+        }
+        return sum;
+    }
+    function fibona(n) {
+        if (n <= 1) return 1;
+        return fibona(n - 1) + fibona(n - 2);
+    }
+    alert("tong cua 20 so fibona la :" + sumFibona(20));
+
+
+    /* bai 6
+let count =0;
+    let sum =0;
+    for (let i=0;i>=0;i++){
+        if (i%7===0){
+            count++;
+            sum+=i;
+        }
+        if (count === 30){
+            alert(sum);
+        }
+    }
+     */
+
+    /* Bai 7
+
+    let num = 100;
+    for (let i = 1; i <= num; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            document.write(i+" FizzBuzz"+"<br>");
+        } else if (i % 3 == 0) {
+            document.write(i+" Fizz" + "<br>");
+        } else if (i % 5 == 0) {
+            document.write(i+" Buzz" + "<br>");
+        }else document.write(i+ "<br>");
+    }
+     */
+</script>
+</body>
+</html>
